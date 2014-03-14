@@ -1,0 +1,32 @@
+// *************************************
+//
+//   _base.scss
+//   -> Base-level styles
+//
+// *************************************
+
+/**
+ * Magic
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+ *, *:before, *:after {
+  box-sizing: border-box;
+ }
+
+/**
+ * $html-font-size is initially set to 62.5%
+ * this is to enable base 10 rem sizing e.g. 14px = 1.4rem
+ */
+html {
+  font-size: $html-font-size;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: $site-font;
+  @include font-size($body-font-size);
+}

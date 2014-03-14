@@ -1,0 +1,25 @@
+// *************************************
+//
+//   _layout.scss
+//   -> Default system being used is Susy - http://susy.oddbird.net/
+//
+// *************************************
+$susy: (
+  columns: 12, 
+  gutters: 1/4
+);
+
+.container {
+  padding: 0 20px;
+  @include container(55em);
+}
+
+.page-container,
+.site-footer-container {
+  padding: 20px 0;
+  @extend .container;
+}
+
+.content-container {
+  @include span(12 of 12);
+}

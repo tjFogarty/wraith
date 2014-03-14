@@ -1,0 +1,13 @@
+// *************************************
+//
+//   _core.scss
+//   -> Loader for all core files
+//
+// *************************************
+
+@import "reset",
+        "settings",
+        "helpers",
+        "base",
+        "content",
+        "layout";
